@@ -36,14 +36,4 @@ public class SqlCostTimeInterceptor implements Interceptor {
             logger.info("{}, cost is {}", sql, cost);
         }
     }
-
-    @Override
-    public Object plugin(Object target) {
-        return Plugin.wrap(target, this);
-    }
-
-    @Override
-    public void setProperties(Properties properties) {
-
-    }
 }

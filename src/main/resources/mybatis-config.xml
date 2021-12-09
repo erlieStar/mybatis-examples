@@ -13,8 +13,8 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 		<typeHandler handler="com.javashitang.part1.typeHandler.MyStringTypeHandler" jdbcType="VARCHAR" javaType="string"/>
 	</typeHandlers>
 	<plugins>
-<!--		<plugin interceptor="com.javashitang.part1.plugins.SqlCostTimeInterceptor"></plugin>-->
-		<plugin interceptor="com.javashitang.part1.plugins.PageInterceptor"></plugin>
+		<plugin interceptor="com.javashitang.part1.plugins.SqlCostTimeInterceptor"></plugin>
+<!--		<plugin interceptor="com.javashitang.part1.plugins.PageInterceptor"></plugin>-->
 	</plugins>
 	<environments default="development">
 		<environment id="development">
