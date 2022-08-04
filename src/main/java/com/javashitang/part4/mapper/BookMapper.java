@@ -12,6 +12,8 @@ public interface BookMapper {
 
     List<Book> selectBookById(List<Integer> list);
 
+    List<Book> selectBookByIdV2(List<Integer> list);
+
     int updateById(@Param("id") Integer id, @Param("name") String name);
 
     int deleteById(Integer id);

@@ -18,6 +18,14 @@
         </foreach>
     </select>
 
+    <select id="selectBookByIdV2" parameterType="int" resultType="com.javashitang.part4.pojo.Book">
+        select <include refid="Base_Column_List" />
+        from book where id in
+        <foreach collection="ids" item="item" open="(" close=")" separator=",">
+            #{item}
+        </foreach>
+    </select>
+
     <update id="updateById">
         update book set `name` = #{name} where id = #{id}
     </update>
